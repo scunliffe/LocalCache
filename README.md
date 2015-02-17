@@ -11,6 +11,17 @@ However when you're looking to implement something "real" with it you soon reali
 * Especially during development, provide an easy way to blow away a namespace... but not anything else stored by the current domain
 * A method to "encrypt" and "decrypt" the data being stored [1]
 
+#Current API
+
+`Map: getKeys(String: namespace)` - Returns a map of all of the keys stored for the given namespace.
+
+`Variant: getItem(String: namespace, String: key)` - Returns the value stored for the applicable key (from the cache if populated) for the given namespace
+
+`Void: setItem(String: namespace, String: key, Variant: value)` - Sets the value in localStorage (and in the cache) for the given namespace
+
+`Void: removeItem(String: namespace, String: key)` - Removes the key/value from localStorage (and the cache) for the given namespace
+
+`Void: removeNamespace(String: namespace)` - Completely removes all keys/values from localStorage (and the cache) for the given namespace
 
 
 [1] Still on the TODO list.  This will of course not be "real" encryption, but rather plugable obfuscation
