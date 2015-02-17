@@ -3,7 +3,7 @@
 		1.) Cached values are native vs. fetched values are always strings, great
 		for performance, bad for consistency
 		2.) It would be nice if this could handle both local and session storage
-		3.) Trying to decide if this was re-jigged to be more of a true singleton
+		3.) Trying to decide if this should be re-jigged to be more of a true singleton
 		and 'real' private methods		
 */
 
